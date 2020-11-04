@@ -13,10 +13,20 @@ public class ChopStick {
         myNumber = ++stickCount;
     }
 
-    // ...
+    public void take(){
+        this.iAmFree = false;
+    }
+    
+    public void release(){
+        this.iAmFree = true;
+    }
     
     @Override
     public String toString() {
         return "Stick#" + myNumber;
+    }
+    
+    public boolean getIamFree(){
+        return iAmFree;
     }
 }
